@@ -1,0 +1,67 @@
+# .gitignore for a .NET Web project
+
+# Visual Studio / Rider / IDE
+.vs/
+.vscode/
+.idea/
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+out/
+build/
+publish/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# Dotnet artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# ASP.NET / Node
+wwwroot/node_modules/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# User secrets and local config
+secrets.json
+appsettings.*.Development.json
+appsettings.*.Local.json
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+coverage/
+
+# Ignore Rider and ReSharper caches
+_ReSharper*/
+*.ReSharper
+
+# End of file
