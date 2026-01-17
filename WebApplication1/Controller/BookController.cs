@@ -10,44 +10,6 @@ namespace WebApplication1.Controller;
 [Route("api/books")]
 public class BookController : Microsoft.AspNetCore.Mvc.Controller
 {
-    // static private List<Book> books = new List<Book>
-    // {
-    //     new Book
-    //     {
-    //         Id = 1,
-    //         Title = "Book 1",
-    //         Author = "John Doe",
-    //         YearPublished = 2000
-    //     },
-    //     new Book
-    //     {
-    //         Id = 2,
-    //         Title = "Book 2",
-    //         Author = "John Doe",
-    //         YearPublished = 2001
-    //     },
-    //     new Book
-    //     {
-    //         Id = 3,
-    //         Title = "Book 3",
-    //         Author = "John Doe",
-    //         YearPublished = 2002
-    //     },
-    //     new Book
-    //     {
-    //         Id = 4,
-    //         Title = "Book 4",
-    //         Author = "John Doe",
-    //         YearPublished = 2003
-    //     },
-    //     new Book
-    //     {
-    //         Id = 5,
-    //         Title = "Book 5",
-    //         Author = "John Doe",
-    //         YearPublished = 2004
-    //     },
-    // };
     
     private readonly Context _context;
 
