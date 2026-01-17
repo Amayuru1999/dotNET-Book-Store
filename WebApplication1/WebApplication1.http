@@ -15,10 +15,9 @@ POST {{rootURL}}/api/books
 Content-Type: application/json
 
 {
-    "id":6,
-    "title": "To Kill a Mockingbird",
+    "title": "This is a hell man",
     "author": "Harper Lee",
-    "yearPublished": 1960
+    "yearPublished": 1930
 }
 
 ###
@@ -27,7 +26,7 @@ Content-Type: application/json
 
 {
   "id":5,
-  "title": "Moby-Dick",
+  "title": "Still a hell man",
   "author": "Lee",
   "yearPublished": 1964
 }
