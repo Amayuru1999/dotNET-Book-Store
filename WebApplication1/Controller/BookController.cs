@@ -54,7 +54,7 @@ public class BookController : Microsoft.AspNetCore.Mvc.Controller
     }
 
     [HttpGet("{id}")]
-    public ActionResult<Book> Get(int id)
+    public ActionResult<Book> GetBookByID(int id)
     {
         var book = books.FirstOrDefault(x => x.Id == id);
         if(book == null)
@@ -70,6 +70,19 @@ public class BookController : Microsoft.AspNetCore.Mvc.Controller
         books.Add(newBook);
         return CreatedAtAction(nameof(GetBookByID), new { id = newBook.Id }, newBook);
     }
-    
+
+    [HttpPut("{id}")]
+    public IActionResult UpdateBook(int id, Book updatedBook)
+    {
+        var  book = books.FirstOrDefault(x => x.Id == id);
+        if(book == null)
+            return NotFound();
+        book.Id = updatedBook.Id;
+        book.Title = updatedBook.Title;
+        book.Author = updatedBook.Author;
+        book.YearPublished = updatedBook.YearPublished;
+        
+        return NoContent();
+    }
     
 }

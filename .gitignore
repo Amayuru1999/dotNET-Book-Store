@@ -41,8 +41,8 @@ yarn.lock
 
 # User secrets and local config
 secrets.json
-appsettings.*.Development.json
-appsettings.*.Local.json
+appsettings.Development.json
+appsettings.Local.json
 
 # Test results
 TestResults/
