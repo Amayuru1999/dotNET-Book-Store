@@ -10,7 +10,6 @@ namespace WebApplication1.Controller;
 [Route("api/books")]
 public class BookController : Microsoft.AspNetCore.Mvc.Controller
 {
-    
     private readonly Context _context;
 
     public BookController(Context context)
