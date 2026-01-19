@@ -16,7 +16,6 @@ public class BookController : Microsoft.AspNetCore.Mvc.Controller
     {
         _context = context;
     }
-    
     [HttpGet]
     public async Task<ActionResult<List<Book>>> GetBooks()
     {
